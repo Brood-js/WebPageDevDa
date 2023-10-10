@@ -1,0 +1,70 @@
+*{
+    background-color: gray
+}
+
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    
+}
+h1{
+    width: 129px;
+    position: fixed;
+    top: 20px;
+    left: 57px;
+    z-index: 500;
+}
+#header{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    /* vertical-align: baseline; */
+    background: transparent;
+}
+
+#devdatep_logo{
+    height: 73px;
+    width: 212;
+}
+
+
+
+#btn_menu{    
+    border:black solid 2px ;    
+    width: 65px;
+    height: 65px;
+    position: fixed;
+    top: 47px;
+    right: 47px;
+    z-index: 520;
+}
+#circle{
+    border: white 2px solid ;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#bar{
+    margin: 9px;    
+}
+
+#vector{
+    width: 24.96px;
+    height: 19.76px;
+}
+#center ul li{
+    font-family: 'Times New Roman', Times, serif;
+}
