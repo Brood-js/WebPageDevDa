@@ -1,46 +1,31 @@
 import '../stylesheets/Navbar.css'
 import devdatep_logo from '../assets/devdatep_logo.png'
 import { useState } from 'react';
-import vector_button from '../assets/vector.png'
+
+import Button_navbar from './Button_navbar';
 
 
-const Navbar = ({ apeear }) => {
+const Navbar = () => {  
+
+    const [click_b,setClick_b] = useState(false)
+
+
+    const show = () =>{
+        setClick_b(!click_b)
+    }
     
-    const [click,setClick] = useState(0)
+    const [changeClass, setChangeclass] = useState(0)
 
-    /* const x =() =>{
-        click = true
-        setClick = console.log(!click)
-    } */
 
-   
 
+
+    
     return(
         <>
-        <header id='header'>
+        <header id='header'/*  onClick={show} className={click ? "c_change" : "c_change on"} */>
         <h1><img  id='devdatep_logo' src={devdatep_logo} alt="logo de devdatep" /></h1>
-        <div id="btn_menu">
-            <div id="circle" onClick={apeear}>
-                <div id='bar'>
-                    <img  id='vector' src={vector_button} alt="vector-button" />
-                </div>
-
-
-            </div>
-        </div>
-       {/*  <div id="block_navbar">
-            <div id="center">
-                <ul>
-                    <li>Inicio</li>
-                    <li>Servicio</li>
-                    <li>Nosotros</li>
-                    <li>Portafolio</li>
-                    <li>Actualidad</li>
-                    <li>Zona de cliente</li>
-                </ul>
-            </div>
+        <Button_navbar show={show} click={click_b}/>              
         
-        </div> */}
         </header>
         </>
     );
