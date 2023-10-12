@@ -16,8 +16,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 80px;
   /* justify-content: space-between; */
-  align-self: center;
-  justify-self: center;
+  place-items: center;
 }
 
 .question {

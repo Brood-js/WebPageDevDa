@@ -4,6 +4,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import Navbar from '@src/components/NavBar'
 
 const Home = () => {
   return (
@@ -25,14 +26,14 @@ const Home = () => {
       >
         <SwiperSlide className='bg-red-500'>
           <div className='h-full w-full'>
-            <div className='flex justify-between mx-4'>
+            {/* <div className='flex justify-between mx-4'>
               <h1>logo</h1>
               <p>prueba navbar</p>
-            </div>
+            </div> */}
+            <Navbar />
             <div className='container bg-blue-500 h-full flex flex-col items-center justify-center mx-auto'>
               <button>PRUEBA</button>
               <div>
-                <h1>prueba</h1>
                 <p>prueba</p>
               </div>
             </div>
